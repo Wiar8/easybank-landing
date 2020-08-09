@@ -15,6 +15,7 @@ body {
   font-family: "Public Sans", sans-serif;
   margin: 0;
   color: var(--grayish-blue);
+  overflow-x: hidden;
 }
 
 .is-hidden {
@@ -71,7 +72,6 @@ body {
   position: fixed;
   z-index: 3;
   width: 100%;
-  overflow: hidden;
   background: white;
 }
 
