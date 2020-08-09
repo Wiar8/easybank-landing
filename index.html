@@ -18,19 +18,42 @@
   </head>
   <body>
     <header class="header">
-      <img src="images/logo.svg" />
-      <nav class="menu"></nav>
+      <div class="wrapper">
+        <div class="header-content">
+          <img class="header-logo" src="images/logo.svg" />
+          <input type="checkbox" id="menu" class="menu-checkbox" />
+          <ul class="menu">
+            <li class="menu-item"><a href="">Home</a></li>
+            <li class="menu-item"><a href="">About</a></li>
+            <li class="menu-item"><a href="">Contact</a></li>
+            <li class="menu-item"><a href="">Blog</a></li>
+            <li class="menu-item"><a href="">Careers</a></li>
+          </ul>
+          <button class="button button-navbar">Request invite</button>
+          <label for="menu" class="menu-button"></label>
+        </div>
+      </div>
     </header>
     <section class="hero">
       <div class="wrapper">
-        <div class="hero-image"></div>
-        <h1 class="title-h1">Next generation digital banking</h1>
-        <p class="copy">
-          Take your financial life online. Your Easybank account will be a
-          one-stop-shop for spending, saving, budgeting, investing, and much
-          more.
-        </p>
-        <button class="button">Request Invite</button>
+        <div class="hero-content">
+          <div class="hero-image">
+            <img
+              class="image-hero-src"
+              src="./images/image-mockups.png"
+              alt=""
+            />
+          </div>
+          <div class="hero-description">
+            <h1 class="title-h1">Next generation digital banking</h1>
+            <p class="copy">
+              Take your financial life online. Your Easybank account will be a
+              one-stop-shop for spending, saving, budgeting, investing, and much
+              more.
+            </p>
+            <button class="button">Request Invite</button>
+          </div>
+        </div>
       </div>
     </section>
     <section class="why">
@@ -49,8 +72,6 @@
               your finances wherever you are in the world.
             </p>
           </div>
-        </div>
-        <div class="why-grid">
           <div class="why-item">
             <img src="images/icon-budgeting.svg" />
             <h1 class="title-h2">Simple Budgeting</h1>
@@ -59,8 +80,6 @@
               notifications when you’re close to hitting your limits.
             </p>
           </div>
-        </div>
-        <div class="why-grid">
           <div class="why-item">
             <img src="images/icon-onboarding.svg" />
             <h1 class="title-h2">Fast Onboarding</h1>
@@ -69,8 +88,6 @@
               start taking control of your finances right away.
             </p>
           </div>
-        </div>
-        <div class="why-grid">
           <div class="why-item">
             <img src="images/icon-api.svg" />
             <h1 class="title-h2">Open API</h1>
@@ -143,7 +160,12 @@
     </section>
     <footer class="footer">
       <div class="wrapper">
-        <svg xmlns="http://www.w3.org/2000/svg" width="139" height="20">
+        <svg
+          class="footer-logo"
+          xmlns="http://www.w3.org/2000/svg"
+          width="139"
+          height="20"
+        >
           <defs>
             <linearGradient id="a" x1="72.195%" x2="17.503%" y1="0%" y2="100%">
               <stop offset="0%" stop-color="#33D35E" />
@@ -171,13 +193,15 @@
           <a href="#" class="icon-pinterest"></a>
           <a href="#" class="icon-instagram"></a>
         </p>
-        <a href="#" class="footer-links"> About Us</a>
-        <a href="#" class="footer-links">Contact</a>
-        <a href="#" class="footer-links">Blog</a>
-        <a href="#" class="footer-links">Careers</a>
-        <a href="#" class="footer-links">Support</a>
-        <a href="#" class="footer-links">Privacy Policy</a>
-        <div>
+        <div class="container-footer-links">
+          <a href="#" class="footer-links"> About Us</a>
+          <a href="#" class="footer-links">Contact</a>
+          <a href="#" class="footer-links">Blog</a>
+          <a href="#" class="footer-links">Careers</a>
+          <a href="#" class="footer-links">Support</a>
+          <a href="#" class="footer-links">Privacy Policy</a>
+        </div>
+        <div class="footer-button">
           <button class="button">Request Invite</button>
         </div>
 
